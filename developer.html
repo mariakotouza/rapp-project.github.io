@@ -1,0 +1,74 @@
+---
+title: Developers
+---
+
+{% include head.html %}
+
+<head>
+<style>
+.newspaper {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+}
+</style>
+</head>
+
+<body>
+<!-- Team Section -->
+    <section id="team" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Are you a developer of robotic applications?</h2>
+                    <h3 class="section-subheading text-muted">We offer you the appropriate environment to implement and publish your robotic applications!</h3>
+
+		     <img src="/agency-jekyll-theme/img/architecture.png" alt="architecture" style="width:504px;height:328px;">
+                     <br>
+                     <br>
+                     <br>
+                </div>
+
+            </div>
+           </div>
+	   
+           <div class="newspaper">
+              <h4 class="developer-heading"> About RAPP architecture</h4>
+		<ul>
+		<li>RAPP adopts a <b>distributed architecture</b>, where the platform and the store are on the cloud, and the client is on the robot. Together, the controller executing on the robot and the controller executing on the cloud, make up a Robotic Application (RApp).</li>
+		<li>The <b>RAPP platform</b> is composed of six major components with different levels of inter-connectivity:</li>
+		<ul>
+		<li>The <b>RAPP Store </b>, which indexes a collection of RApps which may be downloaded by RAPP users on their robots. It is responsible for: Processing new RApps (Building and Packaging), Indexing and Distributing RApps, Updating RApps.</li>
+		<li>The <b>RAPP Improvement Center</b>, which can perform a variety of Machine Learning and Data Mining tasks.</li>
+		<li>The <b>Centralized DB</b>, which acts as the central repository of data required for the RAPP Platform. These correspond to processrelated data, RApp specific data, and user-related data.</li>
+		<li>The <b>Knowledge Base</b>, which is implemented via an ontology scheme, where anonymous data are stored in order to implement machine learning algorithms.</li>
+		<li>The <b>Offline Learning Processes</b>, which involves machine learning components that periodically analyse data stored in the Knowledge Base and the Centralized DB along with metadata and usage logs in order to extract meaningful knowledge.</li>
+		<li>The <b>RApp execution workspace</b>, where the cloud agents are deployed and where specific tasks programmed by the developer of a RApp can be executed, which serves a high performance computing entity.</li>
+		</ul>
+		<li>What bridges all the entities and users, is in fact the <b>RAPP API</b>. Now, the developer should be aware of which parts run on the robot, and which on the cloud, but should not have to dig deep into lower level development of how they intercommunicate, interact or synchronize.</li>
+		</ul>
+		<h4 class="developer-heading">Things you need to know </h4>
+		<ul>
+		<li>As a developer, you need to create an account and <b>log in</b> to the RAPP store in an authenticated manner, in order to become able to <b>submit RApps</b> via an interface. The submitted RApps are <b>cross-compiled</b> for the supported robots, packaged and indexed. Then, they can be distributed at the corresponding robots. If any errors occur during this procedure, you are informed in order to correct them and resubmit the application.</li>
+		<li>A Robotic Application can be submitted as pure <b>C++ code</b>, a <b>ROS package</b> (using C++ or Python) and pure <b>JS code</b>. Thus in the cases of C++ code and the ROS package, the compilation is needed, whereas in the JS case the Store proceeds directly to the packaging. The process identifies the source, binaries and dependant components of a RApp, and highlights the metadata procedures required in order to validate and further utilize the RApp within the RAPP Platform.</li>
+		<li>In the RAPP store website, a list of the <b>available robots</b> and their capabilities can be retrieved from the centralized DB and be accessible to potential developers to help you develop your RApps.</li>
+		<li><b>RApp-related information</b> like compatibility with certain robot models and their respective software and firmware versions, dependencies on other RApps etc. are stored in the Centralized DB on the platform side and are accessible by the RAPP Store.</li>
+		</ul>
+		<h4 class="developer-heading">So, how can RAPP help you? </h4>
+		<ul>
+		<li>You can take the take advantage of the provided infrastructure to easily build and include machine learning and personalization techniques to their applications.</li>
+		<li>You can easily set up your application using the RAPP store.</li>
+		<li>Your application will be uploaded to the RAPP store and everyone will have access to it.</li>
+		</ul>
+           </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+		    <br>
+                    <p class="large text-muted">Find out more in <a href="http://rapp-project.eu/rapp-platform/">http://rapp-project.eu/rapp-platform</a>.</p>
+                </div>
+            </div>
+	   
+        </div>
+    </section>
+
+</body>
