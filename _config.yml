@@ -4,7 +4,7 @@ baseurl: /agency-jekyll-theme/
 # Site settings
 #title: RAPP
 title: <a class="brand-image" href=""><img class="brand-image" src="img/logo.png"/ height="62" width="82"></a> 
-email: your-email@domain.com
+email: info@rapp-project.eu 
 description: "An open-source software platform for developers to easily create and deliver robotics apps dedicated to social inclusion of elderly people."
 
 
