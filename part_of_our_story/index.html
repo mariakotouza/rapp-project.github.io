@@ -1,0 +1,221 @@
+---
+title: Be part of our story
+---
+
+{% include head.html %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+.pp
+    {
+        position:fixed;
+        top: 30px;
+        width: 395px;
+        z-index:1;
+        top:1px;
+
+    }
+
+header{
+   
+    padding: 0.5em;
+    color: white;
+    background-color: #0D98BA;
+    text-align: left;
+}
+
+footer {
+    padding: 1em;
+    color: white;
+    background-color: #0D98BA;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+
+    position: fixed;
+    float: left;
+    max-width: 400px;
+    margin: 0;
+    padding-top: 7.5em;
+}
+
+nav ul {
+
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+
+article {
+
+    margin-left: 410px;
+    border-left: 1px solid gray;
+    padding-top: 7em;
+    padding-left: 2em;
+    padding-right: 2em;
+    overflow: hidden;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<header class="pp">
+   <h3>Be part of our story</h3>
+</header>
+ 
+ 
+<nav>
+  <ul style="list-style-type:none">
+    <li><a class="page-scroll" href="#1 Developer of Robotic Applications">1 Developer of Robotic Applications</a></li>
+    <li><a class="page-scroll" href="#1.1 How can RAPP help you?">&nbsp &nbsp 1.1 How can RAPP help you?</a></li>
+    <li><a class="page-scroll" href="#1.1.1 Learn about RAPP Architecture">&nbsp &nbsp &nbsp &nbsp 1.1.1 Learn about RAPP Architecture</a></li>
+    <li><a class="page-scroll" href="#1.1.2 Additional Things you need to know">&nbsp &nbsp &nbsp &nbsp 1.1.2 Additional Things you need to know</a></li>
+    <li><a class="page-scroll" href="#1.2 Get Involved">&nbsp &nbsp 1.2 Get Involved</a></li>
+    <!--<li><a class="page-scroll" href="#1.2.1 Robotic Applications (RApps) development">&nbsp &nbsp 1.2.1 Robotic Applications (RApps) development</a></li>
+    <li><a class="page-scroll" href="#1.2.2 RAPP Platform enrichment">&nbsp &nbsp 1.2.2 RAPP Platform enrichment</a></li>
+    <li><a class="page-scroll" href="#1.2.3 Supporting new robots in the RAPP Ecosystem">&nbsp &nbsp 1.2.3 Supporting new robots in the RAPP Ecosystem</a></li> -->
+    <li><a class="page-scroll" href="#2 User">2 User</a></li>
+    <li><a class="page-scroll" href="#2.1 Download RApps to your robot">&nbsp &nbsp 2.1 Download RApps to your robot</a></li>
+    <li><a class="page-scroll" href="#2.2 Suggest a new pilot case">&nbsp &nbsp 2.2 Suggest a new pilot case</a></li>
+  </ul>
+</nav>
+
+<article>
+
+
+<!--Section 1-->
+<subsection id="1 Developer of Robotic Applications">      
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Are you a developer of robotic applications?</h2>
+                </div>
+            </div> 
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+		    <br>
+                    <p class="large text-muted">We offer you the appropriate environment to implement and publish your robotic applications!</p>
+                </div>
+            </div>        
+</subsection>               
+
+<!--Section 1.1 -->
+<subsection id="1.1 How can RAPP help you?">
+	<h3>1.1 How can RAPP help you? </h3>
+                <br>
+		<p class="large">&#9658 You can take the take advantage of the provided infrastructure to easily build and include machine learning and personalization techniques to their applications.</p>
+		<p class="large">&#9658 You can easily set up your application using the RAPP store.</p>
+		<p class="large">&#9658 Your application will be uploaded to the RAPP store and everyone will have access to it.</p>
+</subsection>
+
+<br>
+<!--Section 1.1.1-->
+<subsection id="1.1.1 Learn about RAPP Architecture">
+         <h4> 1.1.1 Learn about RAPP Architecture</h4>
+		<br>
+		<p class="large">&#9658 RAPP adopts a <b>distributed architecture</b>, where the platform and the store are on the cloud, and the client is on the robot. Together, the controller executing on the robot and the controller executing on the cloud, make up a Robotic Application (RApp).</p>
+		<p class="large">&#9658 The <b>RAPP platform</b> is composed of six major components with different levels of inter-connectivity:</p>
+		<ul>
+		<li>The <b>RAPP Store </b>, which indexes a collection of RApps which may be downloaded by RAPP users on their robots. It is responsible for: Processing new RApps (Building and Packaging), Indexing and Distributing RApps, Updating RApps.</li>
+		<li>The <b>RAPP Improvement Center</b>, which can perform a variety of Machine Learning and Data Mining tasks.</li>
+		<li>The <b>Centralized DB</b>, which acts as the central repository of data required for the RAPP Platform. These correspond to processrelated data, RApp specific data, and user-related data.</li>
+		<li>The <b>Knowledge Base</b>, which is implemented via an ontology scheme, where anonymous data are stored in order to implement machine learning algorithms.</li>
+		<li>The <b>Offline Learning Processes</b>, which involves machine learning components that periodically analyse data stored in the Knowledge Base and the Centralized DB along with metadata and usage logs in order to extract meaningful knowledge.</li>
+		<li>The <b>RApp execution workspace</b>, where the cloud agents are deployed and where specific tasks programmed by the developer of a RApp can be executed, which serves a high performance computing entity.</li>
+		</ul>
+                <br>
+		<p class="large">&#9658 What bridges all the entities and users, is in fact the <b>RAPP API</b>. Now, the developer should be aware of which parts run on the robot, and which on the cloud, but should not have to dig deep into lower level development of how they intercommunicate, interact or synchronize.</p>
+		
+</subsection>
+
+<br>
+<!--Section 1.1.2 -->
+<subsection id="1.1.2 Additional Things you need to know">
+	<h4> 1.1.2 Additional Things you need to know</h4>
+		<br>
+		<p class="large">&#9658 As a developer, you need to create an account and <b>log in</b> to the RAPP store in an authenticated manner, in order to become able to <b>submit RApps</b> via an interface. The submitted RApps are <b>cross-compiled</b> for the supported robots, packaged and indexed. Then, they can be distributed at the corresponding robots. If any errors occur during this procedure, you are informed in order to correct them and resubmit the application.</p>
+		<p class="large">&#9658 A Robotic Application can be submitted as pure <b>C++ code</b>, a <b>ROS package</b> (using C++ or Python) and pure <b>JS code</b>. Thus in the cases of C++ code and the ROS package, the compilation is needed, whereas in the JS case the Store proceeds directly to the packaging. The process identifies the source, binaries and dependant components of a RApp, and highlights the metadata procedures required in order to validate and further utilize the RApp within the RAPP Platform.</p>
+		<p class="large">&#9658 In the RAPP store website, a list of the <b>available robots</b> and their capabilities can be retrieved from the centralized DB and be accessible to potential developers to help you develop your RApps.</p>
+		<p class="large">&#9658 <b>RApp-related information</b> like compatibility with certain robot models and their respective software and firmware versions, dependencies on other RApps etc. are stored in the Centralized DB on the platform side and are accessible by the RAPP Store.</p>
+</subsection>
+
+
+<br>
+<!--Section 1.2 -->
+<subsection id="1.2 Get Involved">
+	<h3>1.2 Get Involved</h3>
+		<br>
+                <p class="large">There are three levels of technical involvement in RAPP:</p>
+		<p class="large">&#9658Create robotic applications for a robot already supported by RAPP Ecosystem by using the RAPP Platform API and the RAPP Robot API. You can find out more at <a href="https://github.com/rapp-project/rapp-platform/wiki#3-robotic-applications-rapps-development" target="_blank">https://github.com/rapp-project/rapp-platform/wiki#3-robotic-applications-rapps-development</a></p>
+		<p class="large">&#9658Enrich the RAPP Platform by introducing new off-the-shelve robotic-oriented functionalities. You can find out more at <a href="https://github.com/rapp-project/rapp-platform/wiki#4-rapp-platform-enrichment" target="_blank">https://github.com/rapp-project/rapp-platform/wiki#4-rapp-platform-enrichment</a></p>
+		<p class="large">&#9658Support a new robot in the RAPP Ecosystem. You can find out more at <a href="https://github.com/rapp-project/rapp-platform/wiki#5-supporting-new-robots-in-the-rapp-ecosystem" target="_blank">https://github.com/rapp-project/rapp-platform/wiki#5-supporting-new-robots-in-the-rapp-ecosystem</a></p>
+</subsection>	
+
+<br>
+<br>
+<!--Section 2-->
+<subsection id="2 User">      
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Are you a Robot User?</h2>
+                </div>
+            </div> 
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+		    <br>
+                    <p class="large text-muted">We offer you Robotic applications tailored to your needs!</p>
+                </div>
+            </div>
+            <p class="large">Except from developers of robotic applications, RAPP also focuses on robot users. This target group can be seperated in two subgroups:</p>
+            <p class="large"><b>Healthcare professionals</b></p>
+            <p class="large">&#9658 Researchers in the field of Social Inclusion, gerontologists</p>
+            <p class="large">&#9658 Medical staff, social workers, care assistants, etc. looking for ICT solutions for ageing well, in particular in the field of robotics</p>
+
+            <p class="large"><b>End-users, large public and other interested folks</b></p>
+            <p class="large">&#9658 Elderly people, disabled people, family members, friends, neighbors</p>
+            <p class="large">&#9658 Associations of people at risk of exclusion</p>
+            <p class="large">&#9658 Related EU-funded projects</p>
+            <p class="large">&#9658 Third parties interested in robotics for social inclusion</p>        
+</subsection>  
+
+<br>
+<!--Section 2.1 -->
+<subsection id="2.1 Download RApps to your robot">
+	<h3>2.1 Download RApps to your robot</h3>
+		<br>
+                <p class="large">Access the RAPP Store and find out the appropriate RApp for your needs.</p>
+                
+</subsection>	
+
+<br>
+<!--Section 2.2 -->
+<subsection id="2.2 Suggest a new pilot case">
+	<h3>2.2 Suggest a new pilot case</h3>
+		<br>
+                <p class="large">If you have not found any usefull RApps in the RAPP Store or if you have any new pilot cases and Robotic Applications to suggest, we encourage you to contact us. </p>
+</subsection>	
+  
+
+</article>
+
+<footer>Copyright RAPP</footer>
+
+</div>
+
+</body>
+</html>
+
+

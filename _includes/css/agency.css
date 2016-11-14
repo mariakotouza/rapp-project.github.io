@@ -181,6 +181,70 @@ fieldset[disabled] .btn-xl.active {
     background-color: #fff;
 }
 
+
+
+
+
+.fa1 {
+    
+    border-color: #fff;
+    border-radius: 50%;
+    text-transform: uppercase;
+    font-family: {{ site.data.template.font.primary }};
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #0D98BA;    
+    
+    
+   
+  
+}
+
+.fa1:hover,
+.fa1:focus,
+.fa1:active,
+.fa1.active,
+.open .dropdown-toggle.fa1 {  /*The color that the button has when I place the mouse on it*/
+    border-color: #fff;
+    color: #fff;
+    background-color: #ADEAEA;
+}
+
+.fa1:active,
+.fa1.active,
+.open .dropdown-toggle.fa1 {
+    background-image: none;
+}
+
+.fa1.disabled,
+.fa1[disabled],
+fieldset[disabled] .fa1,
+.fa1-xl.disabled:hover,
+.fa1-xl[disabled]:hover,
+fieldset[disabled] .fa1:hover,
+.fa1.disabled:focus,
+.fa1[disabled]:focus,
+fieldset[disabled] .fa1:focus,
+.fa1.disabled:active,
+.fa1[disabled]:active,
+fieldset[disabled] .fa1:active,
+.fa1.disabled.active,
+.fa1[disabled].active,
+fieldset[disabled] .fa1.active {
+    border-color: #fff;
+    background-color: #0D98BA;
+}
+
+.fa1 .badge {
+    color: #0D98BA;
+    background-color: #fff;
+}
+
+
+
+
+
 .navbar-default {
     border-color: transparent;
     background-color: #222;
@@ -363,16 +427,6 @@ section h4.developer-heading {
     text-align: center;
 }
 
-section h4.feedback {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-transform: none;
-    font-family: {{ site.data.template.font.secondary }};
-    font-size: 20px;
-    font-style: italic;
-    text-align: center;
-    text-transform: lowercase;
-}
 
 @media(min-width:768px) {
     section {
