@@ -4,24 +4,49 @@ title: Be part of our story
 
 {% include head.html %}
 
-<!DOCTYPE html>
-<html>
-<head>
 <style>
-div.container {
-    width: 100%;
-    border: 1px solid gray;
+body {
+    font-family: "Lato", sans-serif;
 }
 
-.pp
-    {
-        position:fixed;
-        top: 30px;
-        width: 395px;
-        z-index:1;
-        top:1px;
+.sidenav {
+    display: none;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+}
 
-    }
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
 
 header{
    
@@ -39,60 +64,47 @@ footer {
     text-align: center;
 }
 
-nav {
-
-    position: fixed;
-    float: left;
-    max-width: 400px;
-    margin: 0;
-    padding-top: 7.5em;
-}
-
-nav ul {
-
-    list-style-type: none;
-    padding: 0;
-}
-   
-nav ul a {
-    text-decoration: none;
-}
-
 article {
 
-    margin-left: 410px;
     border-left: 1px solid gray;
     padding-top: 7em;
     padding-left: 2em;
     padding-right: 2em;
     overflow: hidden;
 }
+
 </style>
-</head>
 <body>
 
-<div class="container">
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#1 Developer of Robotic Applications">1 Developer of Robotic Applications</a>
+  <a href="#1 Developer of Robotic Applications">1.1 How can RAPP help you?</a>
+  <a href="#1.1.1 Learn about RAPP Architecture">1.1.1 Learn about RAPP Architecture</a>
+  <a href="#1.1.2 Additional Things you need to know">1.1.2 Additional Things you need to know</a>
+  <a href="#1.2 Get Involved">1.2 Get Involved</a>
+  <a href="#2 User">2 User</a>
+  <a href="#2.1 Download RApps to your robot">2.1 Download RApps to your robot</a>
+  <a href="#2.2 Suggest a new pilot case">2.2 Suggest a new pilot case</a>
+</div>
 
-<header class="pp">
-   <h3>Be part of our story</h3>
+<header> 
+    <h3>
+    <span style="font-size:25px;cursor:pointer" onclick="openNav()">&#9776; </span>
+    &nbsp Be part of our story
+    </h3>
 </header>
- 
- 
-<nav>
-  <ul style="list-style-type:none">
-    <li><a class="page-scroll" href="#1 Developer of Robotic Applications">1 Developer of Robotic Applications</a></li>
-    <li><a class="page-scroll" href="#1.1 How can RAPP help you?">&nbsp &nbsp 1.1 How can RAPP help you?</a></li>
-    <li><a class="page-scroll" href="#1.1.1 Learn about RAPP Architecture">&nbsp &nbsp &nbsp &nbsp 1.1.1 Learn about RAPP Architecture</a></li>
-    <li><a class="page-scroll" href="#1.1.2 Additional Things you need to know">&nbsp &nbsp &nbsp &nbsp 1.1.2 Additional Things you need to know</a></li>
-    <li><a class="page-scroll" href="#1.2 Get Involved">&nbsp &nbsp 1.2 Get Involved</a></li>
-    <!--<li><a class="page-scroll" href="#1.2.1 Robotic Applications (RApps) development">&nbsp &nbsp 1.2.1 Robotic Applications (RApps) development</a></li>
-    <li><a class="page-scroll" href="#1.2.2 RAPP Platform enrichment">&nbsp &nbsp 1.2.2 RAPP Platform enrichment</a></li>
-    <li><a class="page-scroll" href="#1.2.3 Supporting new robots in the RAPP Ecosystem">&nbsp &nbsp 1.2.3 Supporting new robots in the RAPP Ecosystem</a></li> -->
-    <li><a class="page-scroll" href="#2 User">2 User</a></li>
-    <li><a class="page-scroll" href="#2.1 Download RApps to your robot">&nbsp &nbsp 2.1 Download RApps to your robot</a></li>
-    <li><a class="page-scroll" href="#2.2 Suggest a new pilot case">&nbsp &nbsp 2.2 Suggest a new pilot case</a></li>
-  </ul>
-</nav>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.display = "block";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.display = "none";
+}
+</script>
+     
 
 <article>
 
@@ -116,7 +128,7 @@ article {
 <subsection id="1.1 How can RAPP help you?">
 	<h3>1.1 How can RAPP help you? </h3>
                 <br>
-		<p class="large">&#9658 You can take the advantage of the provided infrastructure to easily build and include machine learning and personalization techniques to their applications.</p>
+		<p class="large">&#9658 You can take the take advantage of the provided infrastructure to easily build and include machine learning and personalization techniques to their applications.</p>
 		<p class="large">&#9658 You can easily set up your application using the RAPP store.</p>
 		<p class="large">&#9658 Your application will be uploaded to the RAPP store and everyone will have access to it.</p>
 </subsection>
@@ -217,5 +229,4 @@ article {
 
 </body>
 </html>
-
 
