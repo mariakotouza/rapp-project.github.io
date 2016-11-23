@@ -86,33 +86,17 @@
             <div class="intro-text">
                 <div class="intro-heading">RAPP</div>
                 <div class="intro-lead-in">Empowering robotics for social inclusion</div> 
-		<p class="large">RAPP is a European research Project, which provides an open source software platform to support the creation and delivery of robotic applications. The emphasis of this project is on applications that enable robots to understand and respond to the intentions and needs of people at risk of exclusion, and especially the elderly. RAPP focuses on two major groups: a) developers of robotic applications and b) everyone who takes care of people at risk of exclusion, such as healthcare professionals, families and neighbors.</p> 
+		<p class="large">RAPP is a European research Project, which provides an open source software platform to support the creation and delivery of robotic applications. The emphasis of this project is on applications that enable robots to understand and respond to the intentions and needs of people at risk of exclusion, and especially the elderly. RAPP focuses on two major groups: a) developers of robotic applications and b) anyone who takes care of people at risk of exclusion, such as healthcare professionals, families and neighbors.</p> 
 		<br>
 		<br>     
-
-		<button type="button" class="page-scroll btn btn-xl" onclick="developerFunction()"  input style="margin-right: 			30px">Developer?</button>
-
-		<script language="javascript" type="text/javascript">
-		function developerFunction() {
-    			window.open("developer/index.html",'RAPP','height=850,width=950');
-		}
-		</script>
-
-		<button type="button" class="page-scroll btn btn-xl" onclick="myFunction()">Healthcare provider?</button>
-		<script language="javascript" type="text/javascript">
-		function myFunction() {
-    			window.open("https://www.youtube.com/embed/MNGTj6lK18s",'RAPP','height=400,width=600');
-		}
-		</script>
-
-		
-<!--<iframe width="520" height="293" src="https://www.youtube.com/embed/MNGTj6lK18s" frameborder="0" allowfullscreen></iframe> -->
-            	
-            </div>
- 
+		<button type="button" class="page-scroll btn btn-xl" onclick="location.href='developer/index.html'"  input style="margin-right:30px">Developer?</button>		
+		<button type="button" class="page-scroll btn btn-xl" onclick="location.href='caregiver/index.html'">Healthcare provider?</button>
+            </div> 
         </div>
     </header>
 <!--
+        
+          
         
           
         
@@ -144,7 +128,11 @@
         
           <a class="page-link" href="/agency-jekyll-theme//repository/">Repository</a>
         
+          <a class="page-link" href="/agency-jekyll-theme//caregiver/">Healthcare Provider</a>
+        
           <a class="page-link" href="/agency-jekyll-theme//">RAPP</a>
+        
+          
         
           
         
@@ -219,30 +207,22 @@
            <div class="row">
                 <div class="col-sm-2">
                     <span class="fa-stack fa-4x">
-                        <i class="fa fa-lock fa-stack-1x"></i>
+                        <i class="fa fa-cogs fa-stack-1x"></i>
                     </span>
                 </div>
-
-
                 <div class="col-sm-4">
-                    <h4 class="service-heading">Authentication </h4>
-                    <p class="text-muted">Login-User signs in existing user, Register-User-From-Platform adds new platform user using RAPP-Platform credentials,
-Register-User-From-Store adds new platform user using RAPP-Store credentials.</p>
+                    <h4 class="service-heading">Ontology Intergration </h4>
+                    <p class="text-muted">The RAPP Knowrob wrapper ROS node is needed to expose specific services to the other ROS nodes and RPSs.</p>
                 </div>
-
-
                 <div class="col-sm-2">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-eye fa-stack-1x"></i>
                     </span>
                 </div>
-
-
                 <div class="col-sm-4">
                     <h4 class="service-heading">Computer Vision</h4>
                     <p class="text-muted">Face-Detection, Qr-Detection, Hazard-Detection-Door-Check, Hazard-Detection-Light-Check, Human-Detection, Object-Recognition-Caffe.</p>
                 </div>
-
 	   </div>
  
 <!-- second row -->
@@ -259,95 +239,45 @@ Register-User-From-Store adds new platform user using RAPP-Store credentials.</p
                     <h4 class="service-heading">Speech Recognition</h4>
                     <p class="text-muted">Set-Noise-Profile to apply denoising on speech-recognition,Speech-Detection using the Platform integrated Sphinx4 engine, Speech-Detection using the Platform integrated Google engine.</p>
                 </div>
-
-
                 <div class="col-sm-2">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-file-text-o fa-stack-1x"></i>
                     </span>
                 </div>
-
-
                 <div class="col-sm-4">
                     <h4 class="service-heading">Cognitive Exercises </h4>
                     <p class="text-muted">Cognitive-Test-Selector returns a Cognitive Exercise literal that describes the test, Cognitive-Record-Performance records user's performance on a Cognitive Exercise, Cognitive-Get-History returns user's history on Cognitive Exercise(s), Cognitive-Get-Scores returns user's performance scores on Cognitive Exercise(s).</p>
                 </div>
-
 	   </div>
-
-
 <!-- third row -->
-
-           <div class="row">
-                <div class="col-sm-2">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-bolt fa-stack-1x"></i>
-                    </span>
-                </div>
-
-
-                <div class="col-sm-4">
-                    <h4 class="service-heading">Weather Report</h4>
-                    <p class="text-muted">Weather-Report-Forecast gets detailed information about future weather conditions, Weather-Repost-Current	gets detailed information about current weather conditions.</p>
-                </div>
-
-
-                <div class="col-sm-2">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-envelope-o fa-stack-1x"></i>
-                    </span>
-                </div>
-
-
-                <div class="col-sm-4">
-                    <h4 class="service-heading">Email Support </h4>
-                    <p class="text-muted">Email-Fetch fetches user's email, Email-Send sends an email, using user's account.</p>
-                </div>
-
-	   </div>
-
-
-<!-- fourth row -->
-
            <div class="row">
                 <div class="col-sm-2">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-map fa-stack-1x"></i>
                     </span>
                 </div>
-
-
                 <div class="col-sm-4">
                     <h4 class="service-heading">Path Planning</h4>
                     <p class="text-muted">Path-Planning-Upload-Map uploads a map to store on the Platform, Path-Planning-Plan-Path-2D implements a 2D Path Planning service.</p>
                 </div>
-
-
                 <div class="col-sm-2">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-ellipsis-h fa-stack-1x"></i>
                     </span>
                 </div>
-
-
                 <div class="col-sm-4">
                     <h4 class="service-heading">Other</h4>
                     <p class="text-muted">Text-To-Speech translation is done on given input plain text, Available-Services returns a list of the Platform available services (up-to-date), Geolocaiton gets information about client's location, News-Explore searches for news articles.</p>
                 </div>
-
 	   </div>
-	 
 	   <br>
 	   <br>
 	   <br>
            <div class="text-center">
 	       <a href="https://github.com/rapp-project/rapp-platform/wiki#rapp-nodes" class="page-scroll btn btn-xl" target="_blank">RAPP Nodes</a> 
 	   </div>
-
-
 <!--Close the container -->
 	</div>
-
     </section>
 
 
@@ -433,14 +363,11 @@ Register-User-From-Store adds new platform user using RAPP-Store credentials.</p
                                 </div>
                             </div>
                         </li>
-                        
                         <li>
                             <div class="timeline-image fa1">
                                 <a href="part_of_our_story/index.html"><img class="img-circle img-responsive" src="img/story.PNG" alt=""></a>
                             </div>
                         </li>
-
-
                     </ul>
                 </div>
             </div>
@@ -867,7 +794,7 @@ Register-User-From-Store adds new platform user using RAPP-Store credentials.</p
         </div>
     </div>
 
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -879,9 +806,9 @@ Register-User-From-Store adds new platform user using RAPP-Store credentials.</p
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Escape</h2>
+                            <h2>Dreams</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/escape.png" class="img-responsive img-centered" alt="image-alt">
+                            <img src="img/portfolio/dreams.png" class="img-responsive img-centered" alt="image-alt">
                             <p>Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.</p>
                             <ul class="list-inline item-details">
                                 <li>Client:
@@ -1148,6 +1075,120 @@ Register-User-From-Store adds new platform user using RAPP-Store credentials.</p
                             <h2>Escape</h2>
                             <hr class="star-primary">
                             <img src="img/portfolio/escape.png" class="img-responsive img-centered" alt="image-alt">
+                            <p>Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Escape</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/escape.png" class="img-responsive img-centered" alt="image-alt">
+                            <p>Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Escape</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/escape.png" class="img-responsive img-centered" alt="image-alt">
+                            <p>Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Golden</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/golden.png" class="img-responsive img-centered" alt="image-alt">
                             <p>Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.</p>
                             <ul class="list-inline item-details">
                                 <li>Client:
@@ -2060,6 +2101,120 @@ Register-User-From-Store adds new platform user using RAPP-Store credentials.</p
                             <h2>Round Icons</h2>
                             <hr class="star-primary">
                             <img src="img/portfolio/roundicons.png" class="img-responsive img-centered" alt="image-alt">
+                            <p>Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Treehouse</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/treehouse.png" class="img-responsive img-centered" alt="image-alt">
+                            <p>Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Round Icons</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/roundicons.png" class="img-responsive img-centered" alt="image-alt">
+                            <p>Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.</p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Startup Framework</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/startup-framework.png" class="img-responsive img-centered" alt="image-alt">
                             <p>Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.</p>
                             <ul class="list-inline item-details">
                                 <li>Client:

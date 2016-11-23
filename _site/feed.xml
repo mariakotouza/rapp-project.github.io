@@ -5,8 +5,8 @@
     <description>An open-source software platform for developers to easily create and deliver robotics apps dedicated to social inclusion of elderly people.</description>
     <link>https://y7kim.github.io/agency-jekyll-theme//</link>
     <atom:link href="https://y7kim.github.io/agency-jekyll-theme//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 14 Nov 2016 03:21:58 -0800</pubDate>
-    <lastBuildDate>Mon, 14 Nov 2016 03:21:58 -0800</lastBuildDate>
+    <pubDate>Wed, 23 Nov 2016 04:28:23 -0800</pubDate>
+    <lastBuildDate>Wed, 23 Nov 2016 04:28:23 -0800</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -89,6 +89,21 @@
         <description>
 </description>
         <pubDate>Fri, 18 Jul 2014 00:00:00 -0700</pubDate>
+        <link>https://y7kim.github.io/agency-jekyll-theme//caregiver/web%20development/2014/07/18/project-1/</link>
+        <guid isPermaLink="true">https://y7kim.github.io/agency-jekyll-theme//caregiver/web%20development/2014/07/18/project-1/</guid>
+        
+        
+        <category>caregiver</category>
+        
+        <category>Web Development</category>
+        
+      </item>
+    
+      <item>
+        <title>Dreams</title>
+        <description>
+</description>
+        <pubDate>Fri, 18 Jul 2014 00:00:00 -0700</pubDate>
         <link>https://y7kim.github.io/agency-jekyll-theme//web%20development/2014/07/18/project-1/</link>
         <guid isPermaLink="true">https://y7kim.github.io/agency-jekyll-theme//web%20development/2014/07/18/project-1/</guid>
         
@@ -137,21 +152,6 @@
         
         
         <category>repository</category>
-        
-        <category>Web Development</category>
-        
-      </item>
-    
-      <item>
-        <title>Escape</title>
-        <description>
-</description>
-        <pubDate>Thu, 17 Jul 2014 00:00:00 -0700</pubDate>
-        <link>https://y7kim.github.io/agency-jekyll-theme//rapps/web%20development/2014/07/17/project-2/</link>
-        <guid isPermaLink="true">https://y7kim.github.io/agency-jekyll-theme//rapps/web%20development/2014/07/17/project-2/</guid>
-        
-        
-        <category>rapps</category>
         
         <category>Web Development</category>
         

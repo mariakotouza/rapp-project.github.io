@@ -9,6 +9,13 @@ body {
     font-family: "Lato", sans-serif;
 }
 
+header2 {
+    text-align: center;
+    color: #0D98BA;
+    background-attachment: scroll;
+   
+}
+
 .sidenav {
     display: none;
     height: 65%;
@@ -44,7 +51,7 @@ body {
 }
 
 header{
-    position: fixed;
+    /*position: fixed;*/
     padding: 0.5em;
     color: white;
     background-color: #0D98BA;
@@ -81,7 +88,7 @@ article {
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="#1 Developer of Robotic Applications">1 Developer of Robotic Applications</a>
-  <a href="#1 Developer of Robotic Applications">1.1 How can RAPP help you?</a>
+  <a href="#1.1 How can RAPP help you?">1.1 How can RAPP help you?</a>
   <a href="#1.1.1 Learn about RAPP Architecture">1.1.1 Learn about RAPP Architecture</a>
   <a href="#1.1.2 Additional Things you need to know">1.1.2 Additional Things you need to know</a>
   <a href="#1.2 Get Involved">1.2 Get Involved</a>
@@ -106,9 +113,32 @@ function closeNav() {
     document.getElementById("mySidenav").style.display = "none";
 }
 </script>
-     
+ 
 
 <article>
+
+<div class="container">  
+    <div class="intro-text"> 
+        <header2>
+        <p class="large">The emphasis of this project is on applications that enable robots to understand and respond to the intentions and needs of people at risk of exclusion, and especially the elderly. RAPP focuses on two major groups: a) developers of robotic applications and b) anyone who takes care of people at risk of exclusion, such as healthcare professionals, families and neighbors.</p> 
+	<br>
+	<br>
+        <header2> 
+    </div>
+    <div class="row">     
+        <div class="col-lg-11 text-center">
+            <button type="button" class="page-scroll btn btn-xl" onclick="location.href='#1 Developer of Robotic Applications'"  input style="margin-right:30px">Developer?</button>
+
+            <button type="button" class="page-scroll btn btn-xl" onclick="location.href='#2 User'">Robot User?</button>
+	<br>
+	<br>
+	<br>
+	<br>
+        </div>
+    </div>
+</div>
+
+
 
 
 <!--Section 1-->
@@ -212,10 +242,16 @@ function closeNav() {
 <br>
 <!--Section 2.1 -->
 <subsection id="2.1 Download RApps to your robot">
-	<h3>2.1 Download RApps to your robot</h3>
-		<br>
-                <p class="large">Access the RAPP Store and find out the appropriate RApp for your needs.</p>
-                
+    <h3>2.1 Download RApps to your robot</h3>
+    <br>
+    <p class="large">Access the RAPP Store and find out the appropriate RApp for your needs.</p>
+    <div class=container>
+        <br>
+        <div class="text-center">
+	    <a href="https://rapp.cloud/" class="page-scroll btn btn-xl" target="_blank">RAPP Store</a> 
+	</div>
+        <br>
+    </div>                
 </subsection>	
 
 <br>
